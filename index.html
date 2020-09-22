@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>CREATE YOUR RESUME HERE </h1>
+    <form id="addForm" class="form-box"
+    method="post">
+        <div class="field-group">
+            <label for="first">first</label>
+            <input type="text" id="first" name="f_name"  placeholder="First Name">
+        
+        </div>
+        <div class="field-group">
+            <label for="middle">middle</label>
+            <input type="text" id="middle" name="m_name" placeholder="Middle Name">
+    
+        </div>
+	    <div class="field-group">
+			<label for="last">last</label>
+            <input type="text" id="last" name="l_name" placeholder="Last Name">
+
+        </div>
+        <div class="field-group">
+            <label for="email">email</label>
+            <input type="email" id="email" name="email"  placeholder="studentname@ahesi.edu.gh">
+        
+        </div>
+        <div class="field-group">
+            <label for="address"><Address>HomeAddress</Address></label>
+            <input type="address" id="address" name="address"  placeholder="Address">
+
+        </div>
+            <div class="field-group">
+                <label for="phone">Enter your phone number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="0208272857">
+            
+        </div>
+                 <div class="radio-box">
+                    <p>Gender</p>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label><br>
+
+        </div>
+        <button onclick="window.location.href='./cv.html'"
+        type="submit" value="add" >Submit</button>
+        <div class="radio-box" 
+        id="form-errors"></div>
+    </form>
+    <script src="./index.js"></script src>
+                    
+</body>
+</html>
